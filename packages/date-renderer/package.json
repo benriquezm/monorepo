@@ -1,0 +1,19 @@
+{
+  "name": "@benriquezm/date-renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "https://github.com/benriquezm/monorepo",
+  "publishConfig": {
+    "@benriquezm:registry": "https://npm.pkg.github.com/benriquezm"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@benriquezm/date-logic": "^1.0.0"
+  }
+}
