@@ -1,11 +1,11 @@
 {
-  "name": "@benriquezm/date-logic",
+  "name": "@bellatrix/date-logic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "repository": "https://github.com/benriquezm/monorepo",
   "publishConfig": {
-    "@benriquezm:registry": "https://npm.pkg.github.com/benriquezm"
+    "@bellatrix:registry": "https://npm.pkg.github.com/bellatrix"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
