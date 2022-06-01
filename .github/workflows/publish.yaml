@@ -38,5 +38,6 @@ jobs:
             npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           else
             npx lerna version --conventional-commits --conventional-graduate --yes
+          fi
 
           npx lerna publish from-git --yes
