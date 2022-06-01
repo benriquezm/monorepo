@@ -18,3 +18,13 @@ jobs: # A workflow can have multiple jobs
         uses: actions/setup-node@v2 # public action
         with:
           node-version: "14" # checkout all branches and tags
+
+      - name: "Setup npm" # add our registry to npm config
+        run: | # custom action
+          npm set @benriquezm:registry=https://npm.pkg.github.com/benriquezm
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Install dependencies # setup using node js v14
+        run: | # Install and link dependencies
+          npm ci
+          npx lerna bootstrap
